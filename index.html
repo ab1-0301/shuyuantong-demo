@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>书院通 · 办之前，先把材料备对</title>
+  <meta name="description" content="郑州西亚斯学院 · 明礼住宿书院 · 材料预审办事助手">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+      background:linear-gradient(160deg,#0b1f3a 0%,#12335c 55%,#0d2444 100%);
+      color:#eaf1fb;min-height:100vh;display:flex;align-items:center;justify-content:center;
+      padding:32px 20px;
+    }
+    .wrap{width:100%;max-width:760px}
+    .brand{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+    .logo{
+      width:52px;height:52px;border-radius:14px;flex:0 0 52px;
+      background:linear-gradient(135deg,#4f8cff,#8b5cf6);
+      display:flex;align-items:center;justify-content:center;
+      font-size:26px;box-shadow:0 8px 24px rgba(79,140,255,.35);
+    }
+    h1{font-size:26px;letter-spacing:.5px}
+    .sub{color:#9fb6d4;font-size:14px;margin-top:4px}
+    .lead{
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+      border-radius:16px;padding:24px 26px;margin-bottom:22px;backdrop-filter:blur(8px);
+    }
+    .lead p{font-size:15px;line-height:1.85;color:#d5e3f7}
+    .lead b{color:#8ab6ff}
+    .quote{
+      margin-top:16px;padding-left:14px;border-left:3px solid #4f8cff;
+      color:#a9c2e0;font-size:14px;line-height:1.8;
+    }
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:22px}
+    .card{
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+      border-radius:13px;padding:15px 16px;
+    }
+    .card .t{font-size:14px;font-weight:600;margin-bottom:6px;color:#cfe0f7}
+    .card .d{font-size:12.5px;color:#8fa8c6;line-height:1.6}
+    .tip{
+      display:flex;gap:11px;align-items:flex-start;
+      background:rgba(79,140,255,.11);border:1px solid rgba(79,140,255,.3);
+      border-radius:13px;padding:15px 17px;font-size:13.5px;line-height:1.7;color:#c3d7f2;
+    }
+    .tip .i{flex:0 0 auto;font-size:16px}
+    .foot{margin-top:26px;text-align:center;font-size:12px;color:#6d87a6;line-height:1.9}
+    @media(max-width:520px){h1{font-size:21px}.lead{padding:19px 18px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">📋</div>
+      <div>
+        <h1>书院通</h1>
+        <div class="sub">郑州西亚斯学院 · 明礼住宿书院 · 材料预审助手</div>
+      </div>
+    </div>
+
+    <div class="lead">
+      <p>
+        官方管「<b>怎么办</b>」，书院通管「<b>你带对了没有</b>」。
+      </p>
+      <p style="margin-top:12px">
+        说一句「我要办医保报销」，它会问几个只跟你有关的问题，
+        然后给你一张<b>只属于你的材料清单</b>；勾掉已经备好的，
+        剩下的<b>当场标红</b>，并告诉你<b>去哪补</b>。
+      </p>
+      <div class="quote">
+        不代办事务 · 不碰材料内容 · 不替代官方系统
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="t">只问你在意的</div>
+        <div class="d">住院还是门诊、本地还是异地，问完才出清单</div>
+      </div>
+      <div class="card">
+        <div class="t">缺什么当场说</div>
+        <div class="d">不等到窗口才被告知"还差一份"</div>
+      </div>
+      <div class="card">
+        <div class="t">去哪补也告诉你</div>
+        <div class="d">每项材料的补办地点一并给出</div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <span class="i">💬</span>
+      <span>右下角就是书院通。直接说你要办什么事——比如「<b>医保报销</b>」「<b>迎新报到</b>」「<b>学生资助</b>」。</span>
+    </div>
+
+    <div class="foot">
+      本页面为比赛演示用途 · 内容由 AI 生成，请以学校官方通知为准<br>
+      郑州西亚斯学院 · 校园智能体创新赛道
+    </div>
+  </div>
+
+  <!-- ===== Coze Chat SDK ===== -->
+  <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js"></script>
+  <script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7693864624248455209',
+      },
+      componentProps: {
+        title: '书院通',
+      },
+      auth: {
+        type: 'token',
+        token: 'pat_bG1acb0x98xqxizCQHcfMEcnEL1PVjWyHV0BXisEHoXR3Gkm2vM70BVQX3Em9kkx',
+        onRefreshToken: function () {
+          return 'pat_bG1acb0x98xqxizCQHcfMEcnEL1PVjWyHV0BXisEHoXR3Gkm2vM70BVQX3Em9kkx';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
